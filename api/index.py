@@ -23,29 +23,9 @@ app = Flask(__name__)
 CORS(app)
 embeddingModel = SentenceTransformer('intfloat/multilingual-e5-large')
 
-
 # Gemini API Configuration
 genai.configure(api_key=os.environ["Gemini_API_Key"])
 model = genai.GenerativeModel("gemini-1.5-flash")
-
-
-# def old_summarization_pipeline(text: List[str]) -> List[str]:
-#     input_ids = tokenizer.batch_encode_plus(
-#         text, 
-#         truncation=True, 
-#         padding=True, 
-#         return_tensors='pt', 
-#         max_length=1024
-#     )['input_ids']
-    
-#     summary_ids = bart_model.generate(input_ids)
-    
-#     summaries = [
-#         tokenizer.decode(s, skip_special_tokens=True, clean_up_tokenization_spaces=True) 
-#         for s in summary_ids
-#     ]
-    
-#     return summaries
 
 # Configure AWS S3
 s3 = boto3.client(
@@ -162,8 +142,6 @@ def removeDuplicateContent(text):
     return " ".join(deduplicated_sentences)
 
 
-
-
 @app.route('/flashcards', methods=['POST'])
 def flashcards():
     text_content = request.form.get('text_content')
@@ -254,8 +232,6 @@ def query_pinecone():
     data = request.get_json()
     question = data.get('question')
     session_id = data.get('session_id')
-
-
  
     if not question or not session_id:
         return jsonify({"error": "Question or session_id missing"}), 400
@@ -367,8 +343,6 @@ def summarize_file():
     except Exception as e:
         print(f"Error during summarization: {str(e)}")
         return jsonify({"error": f"Error processing input: {str(e)}"}), 500
-
-    
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
