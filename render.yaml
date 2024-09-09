@@ -1,19 +1,9 @@
-yaml
 services:
   - type: web
-    name: nextjs-app
-    env: node
-    buildCommand: npm ci && npm run build
-    startCommand: npm start
-    envVars:
-      - key: NODE_ENV
-        value: production
-
-  - type: web
-    name: python-api
+    name: flask-backend
     env: python
-    buildCommand: pip install -r api/requirements.txt
-    startCommand: gunicorn api.app:app
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: gunicorn backend.app:app
     envVars:
       - key: PYTHON_VERSION
-        value: 3.9.0
+        value: 3.9.18

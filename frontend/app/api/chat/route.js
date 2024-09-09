@@ -17,7 +17,7 @@ export async function POST(request) {
 
     // If text input is provided, send it to the backend for embedding and storing in Pinecone
     if (text) {
-      const response = await fetch("http://localhost:5000/embed_text", {
+      const response = await fetch(`${process.env.BACKEND_URL}/embed_text`, {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -65,7 +65,7 @@ export async function POST(request) {
       const uploadResult = await s3.upload(s3Params).promise();
       console.log(`File uploaded to S3: ${uploadResult.Location}`);
 
-      const response = await fetch("http://localhost:5000/upload", {
+      const response = await fetch(`${process.env.BACKEND_URL}/upload`, {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",

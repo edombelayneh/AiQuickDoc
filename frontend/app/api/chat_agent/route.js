@@ -44,7 +44,7 @@ export async function POST(req) {
     async start(controller) {
       try {
         // Send the user's question to the backend for Pinecone querying
-        const backendResponse = await fetch(`http://localhost:5000/query`, {
+        const backendResponse = await fetch(`${process.env.BACKEND_URL}/query`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ session_id, question: message }),
