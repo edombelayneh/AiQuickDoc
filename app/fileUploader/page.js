@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect, useRef } from "react";
+import { API_URL } from '../api/backend/route';
 import {
   Button,
   Card,
@@ -112,7 +113,7 @@ export default function FileUploadSummarize() {
     }
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await fetch(`${API_URL}/chat`, {
         method: "POST",
         body: formData,
       });
@@ -142,7 +143,7 @@ export default function FileUploadSummarize() {
 
   const sendGreeting = async (sessionId) => {
     try {
-      const response = await fetch("/api/chat_agent", {
+      const response = await fetch(`${API_URL}/chat_agent`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -203,7 +204,7 @@ export default function FileUploadSummarize() {
     }
 
     try {
-      const response = await fetch("/api/summarize", {
+      const response = await fetch(`${API_URL}/summarize`, {
         method: "POST",
         body: formData,
       });
@@ -283,7 +284,7 @@ export default function FileUploadSummarize() {
 
     try {
       console.log("Sending request to generate flashcards...");
-      const response = await fetch("/api/flashcard", {
+      const response = await fetch(`${API_URL}/flashcard`, {
         method: "POST",
         body: formData,
       });
@@ -320,7 +321,7 @@ export default function FileUploadSummarize() {
     setIsSendingMessage(true);
 
     try {
-      const response = await fetch("/api/chat_agent", {
+      const response = await fetch(`${API_URL}/chat_agent`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
