@@ -88,6 +88,7 @@ def extract_text_from_pdf(pdf_bytes, chunk_size=1000):
     except Exception as e:
         return jsonify({"error": f"Error embedding text: {str(e)}"}), 500
 
+
 #Remove Duplicates
 import re
 
