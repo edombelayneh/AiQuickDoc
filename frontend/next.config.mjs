@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    BACKEND_URL: process.env.BACKEND_URL || 'http://localhost:5000',
+  },
   webpack: (config, { isServer }) => {
     // Ensure `onnxruntime-node` is not bundled in the client-side code
     if (!isServer) {

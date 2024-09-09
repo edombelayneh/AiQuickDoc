@@ -32,7 +32,7 @@ export async function POST(request) {
       console.log(`File uploaded to S3: ${fileUrl}`);
 
       // Send PDF file URL to Flask for summarization
-      const response = await fetch("http://localhost:5000/summarize", {
+      const response = await fetch(`${process.env.BACKEND_URL}/summarize`, {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -49,7 +49,7 @@ export async function POST(request) {
       summaryData = await response.json();
     } else if (text) {
       // Send text directly to Flask for summarization
-      const response = await fetch("http://localhost:5000/summarize", {
+      const response = await fetch(`${process.env.BACKEND_URL}/summarize`, {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",

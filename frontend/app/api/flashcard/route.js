@@ -58,7 +58,7 @@ export async function POST(request) {
       console.log(`File uploaded to S3: ${fileUrl}`);
 
       // Send PDF file URL to backend for text extraction
-      const response = await fetch("http://localhost:5000/flashcards", {
+      const response = await fetch(`${process.env.BACKEND_URL}/flashcards`, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({ file_url: fileUrl }),
