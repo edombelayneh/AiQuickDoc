@@ -30,7 +30,16 @@ AiQuickDoc is an advanced AI-powered web application designed to enhance documen
   <img src="https://img.shields.io/badge/-GroqCloud API-364559?&style=for-the-badge&logoColor=white" />
 </div>
 
+
 ## Preview
+  - Employed Dark and Light mode
+<img width="1440" alt="Screenshot 2024-09-10 at 11 41 17 AM" src="https://github.com/user-attachments/assets/4d276435-be57-4ee5-85f5-e1d09baf03e8">
+<img width="1440" alt="Screenshot 2024-09-10 at 11 37 33 AM" src="https://github.com/user-attachments/assets/b12d9865-16d9-4693-b97c-4f8022e6de13">
+
+  - Designed Promotional Flyer
+![2](https://github.com/user-attachments/assets/229b0f3d-e664-49fe-b1c6-5421218eac7f)
+![1](https://github.com/user-attachments/assets/9b243d74-1e69-4176-b0d5-5188bce933dd)
+
 
 
 ## To Execute
