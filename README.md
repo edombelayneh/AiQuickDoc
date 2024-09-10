@@ -1,22 +1,23 @@
 ## AiQuickDoc
 
-<img src="https://img.shields.io/badge/-Team Project-29cf42?&style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/-Publicly_Available-29cf42?&style=for-the-badge&logoColor=white" />
 
 ## Objective
 
-This team project is an AI-powered flashcard generator application. The app leverages Groq Cloud for AI functionalities, Stripe for payment processing, and Clerk for user management. Built with Node.js and deployed on Vercel, it features a user-friendly interface using Material-UI. The app simplifies the creation and management of flashcards, offering a seamless experience for users to enhance their learning.
+AiQuickDoc is an advanced AI-powered web application designed to enhance document interaction. It processes PDF files and copied text to provide summaries, generate flashcards, and offer a chat interface for asking questions based on the provided content. Built using Next.js and Material-UI (MUI), and deployed on Render, AiQuickDoc integrates with AWS S3 for storage, Pinecone for vector search, Clerk for user authentication, Stripe for payment processing, Hugging Face for AI capabilities, and GroqCloud AI API for intelligent responses. This app simplifies document management and learning by delivering interactive and insightful content based on user inputs.
 
 **To view the app, <a href="https://ai-rmp-nu.vercel.app/"> Click-here</a>.** 
 
 ## Skills Learned
-- Proficiency in deploying web applications on Vercel.
-- Experience integrating Stripe for payment processing and Clerk for user management.
-- Advanced skills in AI integration with Groq Cloud to generate flashcards based on user input.
-- Enhanced understanding of creating interactive user interfaces with Material-UI.
-- Proficiency in state management and asynchronous operations using Node.js.
-- Ability to design and implement responsive layouts and components using Material-UI.
-- Experience in handling user authentication and secure transactions within a web application.
-- Capability to optimize performance and ensure a seamless user experience in data handling.
+
+- Proficiency in building and deploying web applications with Next.js and Render.
+- Experience in integrating AWS S3 for storage and Pinecone for advanced vector search functionalities.
+- Enhanced skills in user management with Clerk and payment processing with Stripe.
+- Advanced use of Hugging Face and GroqCloud AI APIs for generating intelligent responses and content.
+- Expertise in designing intuitive user interfaces using Material-UI.
+- Ability to manage and optimize state and asynchronous operations in a React environment.
+- Understanding of integrating various APIs and services to create a cohesive application experience.
+- Knowledge in implementing secure authentication and payment systems in web applications.
   
 ## Tools Used
 
@@ -30,8 +31,6 @@ This team project is an AI-powered flashcard generator application. The app leve
 </div>
 
 ## Preview
-<img width="1440" alt="Screenshot 2024-08-30 at 4 29 14 PM" src="https://github.com/user-attachments/assets/450ddda8-9220-4a62-a999-2a22ddfba70b">
-
 
 
 ## To Execute
