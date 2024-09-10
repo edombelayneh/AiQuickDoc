@@ -1,12 +1,12 @@
 ## AiQuickDoc
 
-<img src="https://img.shields.io/badge/-Publicly_Available-29cf42?&style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/-Team Project-29cf42?&style=for-the-badge&logoColor=white" />
 
 ## Objective
 
 AiQuickDoc is an advanced AI-powered web application designed to enhance document interaction. It processes PDF files and copied text to provide summaries, generate flashcards, and offer a chat interface for asking questions based on the provided content. Built using Next.js and Material-UI (MUI), and deployed on Render, AiQuickDoc integrates with AWS S3 for storage, Pinecone for vector search, Clerk for user authentication, Stripe for payment processing, Hugging Face for AI capabilities, and GroqCloud AI API for intelligent responses. This app simplifies document management and learning by delivering interactive and insightful content based on user inputs.
 
-**To view the app, <a href="https://ai-rmp-nu.vercel.app/"> Click-here</a>.** 
+**To view the app, <a href="https://aiquickdoc-app.onrender.com/"> Click-here</a>.** 
 
 ## Skills Learned
 
@@ -34,4 +34,4 @@ AiQuickDoc is an advanced AI-powered web application designed to enhance documen
 
 
 ## To Execute
-- <a href="https://ai-rmp-nu.vercel.app/"> Click-here</a>
+- <a href="https://aiquickdoc-app.onrender.com/"> Click-here</a>
